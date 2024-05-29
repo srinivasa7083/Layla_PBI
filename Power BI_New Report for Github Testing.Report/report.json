@@ -36,15 +36,6 @@
           "z": 1001.00
         },
         {
-          "config": "{\"name\":\"1bb53ad3077461c7b6b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":827.4470259133319,\"y\":414.4096216017019,\"z\":1003,\"width\":452.831705723714,\"height\":304.63223839595304,\"tabOrder\":1003}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(EMP.COMM)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"COMM\"}},\"Function\":0},\"Name\":\"Sum(EMP.COMM)\",\"NativeReferenceName\":\"Sum of COMM\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"COMM\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 304.63,
-          "width": 452.83,
-          "x": 827.45,
-          "y": 414.41,
-          "z": 1003.00
-        },
-        {
           "config": "{\"name\":\"2d4abcfbcc2db1a9d56c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":391.08192767048024,\"y\":414.4096216017019,\"z\":1004,\"width\":436.3650982428517,\"height\":281.3045444647314,\"tabOrder\":1004}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"EMP.ENAME\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(EMP.SAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"ENAME\"},\"Name\":\"EMP.ENAME\",\"NativeReferenceName\":\"ENAME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0},\"Name\":\"Sum(EMP.SAL)\",\"NativeReferenceName\":\"Sum of SAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 281.30,
