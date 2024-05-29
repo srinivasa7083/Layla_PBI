@@ -1,0 +1,78 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"067834909cd5a0dbc6d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15,\"y\":415,\"width\":451,\"height\":305,\"z\":1001,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(EMP.SAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0},\"Name\":\"Sum(EMP.SAL)\",\"NativeReferenceName\":\"Sum of SAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 305.00,
+          "width": 451.00,
+          "x": 15.00,
+          "y": 415.00,
+          "z": 1001.00
+        },
+        {
+          "config": "{\"name\":\"1bb53ad3077461c7b6b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":827.4470259133319,\"y\":414.4096216017019,\"z\":1003,\"width\":452.831705723714,\"height\":304.63223839595304,\"tabOrder\":1003}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(EMP.COMM)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"COMM\"}},\"Function\":0},\"Name\":\"Sum(EMP.COMM)\",\"NativeReferenceName\":\"Sum of COMM\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"COMM\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 304.63,
+          "width": 452.83,
+          "x": 827.45,
+          "y": 414.41,
+          "z": 1003.00
+        },
+        {
+          "config": "{\"name\":\"2d4abcfbcc2db1a9d56c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":391.08192767048024,\"y\":414.4096216017019,\"z\":1004,\"width\":436.3650982428517,\"height\":281.3045444647314,\"tabOrder\":1004}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"EMP.ENAME\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(EMP.SAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"ENAME\"},\"Name\":\"EMP.ENAME\",\"NativeReferenceName\":\"ENAME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0},\"Name\":\"Sum(EMP.SAL)\",\"NativeReferenceName\":\"Sum of SAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 281.30,
+          "width": 436.37,
+          "x": 391.08,
+          "y": 414.41,
+          "z": 1004.00
+        },
+        {
+          "config": "{\"name\":\"620b16cb1d10d935b75a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":542.0258295783849,\"y\":13.722172900718606,\"z\":1000,\"width\":386.9652758002647,\"height\":341.68210522789326,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"EMP.DEPTNO\",\"active\":true}],\"Series\":[{\"queryRef\":\"EMP.JOB\"}],\"Y\":[{\"queryRef\":\"Sum(EMP.SAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DEPTNO\"},\"Name\":\"EMP.DEPTNO\",\"NativeReferenceName\":\"DEPTNO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"JOB\"},\"Name\":\"EMP.JOB\",\"NativeReferenceName\":\"JOB\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0},\"Name\":\"Sum(EMP.SAL)\",\"NativeReferenceName\":\"Sum of SAL\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 341.68,
+          "width": 386.97,
+          "x": 542.03,
+          "y": 13.72,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9421fa8d17261df5e679\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.094390190790467,\"y\":13.722172900718606,\"z\":0,\"width\":451.45948843364215,\"height\":391.08192767048024,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"EMP.ENAME\"},{\"queryRef\":\"Sum(EMP.EMPNO)\"},{\"queryRef\":\"DEPT.DNAME\"},{\"queryRef\":\"DEPT.DEPTNO\"},{\"queryRef\":\"Sum(EMP.SAL)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"EMP\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEPT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EMPNO\"}},\"Function\":0},\"Name\":\"Sum(EMP.EMPNO)\",\"NativeReferenceName\":\"EMPNO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"ENAME\"},\"Name\":\"EMP.ENAME\",\"NativeReferenceName\":\"ENAME\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SAL\"}},\"Function\":0},\"Name\":\"Sum(EMP.SAL)\",\"NativeReferenceName\":\"SAL\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DNAME\"},\"Name\":\"DEPT.DNAME\",\"NativeReferenceName\":\"DNAME\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DEPTNO\"},\"Name\":\"DEPT.DEPTNO\",\"NativeReferenceName\":\"DEPTNO\"}]},\"columnProperties\":{\"Sum(EMP.SAL)\":{\"displayName\":\"SAL\"},\"Sum(EMP.EMPNO)\":{\"displayName\":\"EMPNO\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 391.08,
+          "width": 451.46,
+          "x": 15.09,
+          "y": 13.72,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

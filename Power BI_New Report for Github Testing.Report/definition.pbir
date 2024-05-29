@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Power BI_New Report for Github Testing.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Power BI_New Report for Github Testing"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ba362c15-2bb0-4684-91a5-9a8df54ef92c"
+  }
+}
